@@ -80,6 +80,8 @@ The changelog for `IGListKit`. Also see the [releases](https://github.com/instag
 
 - Request the `UICollectionView` until just-before we update. This way if the `UICollectionView` is changed between update-queue and execution, we guarantee the update is performed on the correct view. Ship with experiment `IGListExperimentGetCollectionViewAtUpdate` from Ryan Nystrom. [Maxime Ollivier](https://github.com/maxolls) (tbd)
 
+- Added support for iOS 13 Context Menus with `contextMenuConfigurationForItemAt` method. [Jérôme B.](https://github.com/jjbourdev) [(#1430)](https://github.com/Instagram/IGListKit/pull/1430).
+
 4.0.0
 -----
 ### Breaking Changes
