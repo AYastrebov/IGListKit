@@ -406,6 +406,10 @@
 		88DF89881E010F5C00B1B9B4 /* IGListDiffResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 294AC6311DDE4C19002FCE5D /* IGListDiffResultTests.m */; };
 		88DF89891E010F6500B1B9B4 /* IGListDiffSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE61D870EDC007C7F66 /* IGListDiffSwiftTests.swift */; };
 		88DF898A1E010F7000B1B9B4 /* IGListDiffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE81D870EDC007C7F66 /* IGListDiffTests.m */; };
+		BDF8B43425EE90A40055F9F4 /* ListIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8B43225EE90A40055F9F4 /* ListIdentifiable.swift */; };
+		BDF8B43525EE90A40055F9F4 /* ListIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8B43225EE90A40055F9F4 /* ListIdentifiable.swift */; };
+		BDF8B43625EE90A40055F9F4 /* ListValueSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8B43325EE90A40055F9F4 /* ListValueSectionController.swift */; };
+		BDF8B43725EE90A40055F9F4 /* ListValueSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8B43325EE90A40055F9F4 /* ListValueSectionController.swift */; };
 		DD468D380BBF350ACE7EA28B /* Pods_IGListKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB7195278D0BBB5DA88D36F /* Pods_IGListKitTests.framework */; };
 		E56B7B3420A9D7100071010C /* IGListCollectionScrollingTraitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B7B3320A9D7100071010C /* IGListCollectionScrollingTraitsTests.m */; };
 		E56B7B3520A9D7100071010C /* IGListCollectionScrollingTraitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B7B3320A9D7100071010C /* IGListCollectionScrollingTraitsTests.m */; };
@@ -716,6 +720,8 @@
 		887D0B571D870E1E009E01F7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DF897C1E010E6A00B1B9B4 /* IGListKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IGListKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9574C58371B7A46F62E9AC24 /* Pods-IGListKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitTests/Pods-IGListKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDF8B43225EE90A40055F9F4 /* ListIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListIdentifiable.swift; sourceTree = "<group>"; };
+		BDF8B43325EE90A40055F9F4 /* ListValueSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListValueSectionController.swift; sourceTree = "<group>"; };
 		CA8726D7FF3608E20E9F7EC6 /* Pods-IGListKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitTests/Pods-IGListKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD3152AC1DE227FA00AC9D2C /* IGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56B7B3320A9D7100071010C /* IGListCollectionScrollingTraitsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGListCollectionScrollingTraitsTests.m; sourceTree = "<group>"; };
@@ -1008,9 +1014,11 @@
 		7A92EA9823A8A42000E5A13D /* IGListSwiftKit */ = {
 			isa = PBXGroup;
 			children = (
-				7A92EA9923A8A42000E5A13D /* IGListSwiftKit.h */,
 				7A92EA9F23A8A43D00E5A13D /* IGListCollectionContext+Refinements.swift */,
 				7AEA8E5C25BF715C00971591 /* IGListSingleSectionController+Refinements.swift */,
+				7A92EA9923A8A42000E5A13D /* IGListSwiftKit.h */,
+				BDF8B43225EE90A40055F9F4 /* ListIdentifiable.swift */,
+				BDF8B43325EE90A40055F9F4 /* ListValueSectionController.swift */,
 			);
 			path = IGListSwiftKit;
 			sourceTree = "<group>";
@@ -1861,6 +1869,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEA8E5D25BF715C00971591 /* IGListSingleSectionController+Refinements.swift in Sources */,
+				BDF8B43425EE90A40055F9F4 /* ListIdentifiable.swift in Sources */,
+				BDF8B43625EE90A40055F9F4 /* ListValueSectionController.swift in Sources */,
 				7A92EAA023A8A43D00E5A13D /* IGListCollectionContext+Refinements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1870,6 +1880,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEA8E5E25BF715C00971591 /* IGListSingleSectionController+Refinements.swift in Sources */,
+				BDF8B43525EE90A40055F9F4 /* ListIdentifiable.swift in Sources */,
+				BDF8B43725EE90A40055F9F4 /* ListValueSectionController.swift in Sources */,
 				7A92EAB123A8A50C00E5A13D /* IGListCollectionContext+Refinements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
