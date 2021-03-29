@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import <IGListDiffKit/IGListCompatibility.h>
+#import "IGListCompatibility.h"
 
 /**
  * Project version number for IGListKit.
