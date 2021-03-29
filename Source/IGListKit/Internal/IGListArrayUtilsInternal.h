@@ -8,7 +8,11 @@
 #ifndef IGListArrayUtilsInternal_h
 #define IGListArrayUtilsInternal_h
 
+#if !__has_include(<IGListDiffKit/IGListDiffKit.h>)
+#import "IGListAssert.h"
+#else
 #import <IGListDiffKit/IGListAssert.h>
+#endif
 
 static NSArray *objectsWithDuplicateIdentifiersRemoved(NSArray<id<IGListDiffable>> *objects) {
     if (objects == nil) {
