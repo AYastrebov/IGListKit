@@ -43,6 +43,11 @@ NS_SWIFT_NAME(ListCollectionContext)
 @property (nonatomic, readonly) CGSize insetContainerSize;
 
 /**
+ The content offset of the collection view.
+ */
+@property (nonatomic, readonly) CGPoint containerContentOffset;
+
+/**
  The current scrolling traits of the underlying collection view.
  */
 @property (nonatomic, readonly) IGListCollectionScrollingTraits scrollingTraits;
@@ -178,7 +183,7 @@ NS_SWIFT_NAME(ListCollectionContext)
 
  @return A cell dequeued from the reuse pool or a newly created one.
 
- @note This method uses a string representation of the cell class as the identifier.
+ @note This method uses the nib name as the reuse identifier.
  */
 - (__kindof UICollectionViewCell *)dequeueReusableCellWithNibName:(NSString *)nibName
                                                            bundle:(nullable NSBundle *)bundle
@@ -208,7 +213,7 @@ NS_SWIFT_NAME(ListCollectionContext)
 
  @return A supplementary view dequeued from the reuse pool or a newly created one.
 
- @note This method uses a string representation of the view class as the identifier.
+ @note This method uses a string representation of the view class and the kind as the identifier.
  */
 - (__kindof UICollectionReusableView *)dequeueReusableSupplementaryViewOfKind:(NSString *)elementKind
                                                          forSectionController:(IGListSectionController *)sectionController
@@ -240,7 +245,7 @@ NS_SWIFT_NAME(ListCollectionContext)
 
  @return A supplementary view dequeued from the reuse pool or a newly created one.
 
- @note This method uses a string representation of the view class as the identifier.
+ @note This method uses the nib name as the reuse identifier.
  */
 - (__kindof UICollectionReusableView *)dequeueReusableSupplementaryViewOfKind:(NSString *)elementKind
                                                          forSectionController:(IGListSectionController *)sectionController
