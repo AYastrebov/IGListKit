@@ -9,13 +9,10 @@ let package = Package(
     ],
     products: [
         .library(name: "IGListDiffKit",
-                 type: .dynamic, 
                  targets: ["IGListDiffKit"]),
         .library(name: "IGListKit",
-                 type: .dynamic,
                  targets: ["IGListKit"]),
         .library(name: "IGListSwiftKit",
-                 type: .dynamic,
                  targets: ["IGListSwiftKit"]),
     ],
     targets: [
