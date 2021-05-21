@@ -13,7 +13,10 @@ let package = Package(
                  targets: ["IGListDiffKit"]),
         .library(name: "IGListKit",
                  type: .static,
-                 targets: ["IGListKit"])
+                 targets: ["IGListKit"]),
+        .library(name: "IGListSwiftKit",
+                 type: .static,
+                 targets: ["IGListSwiftKit"]),
     ],
     targets: [
         .target(
@@ -24,6 +27,11 @@ let package = Package(
             name: "IGListKit",
             dependencies: ["IGListDiffKit"],
             path: "spm/Sources/IGListKit"
+        ),
+        .target(
+            name: "IGListSwiftKit",
+            dependencies: ["IGListKit"],
+            path: "Source/IGListSwiftKit"
         ),
     ],
     cLanguageStandard: .c11,
